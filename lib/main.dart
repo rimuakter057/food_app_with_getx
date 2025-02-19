@@ -17,6 +17,11 @@ class FoodApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: TextTheme(
+          bodyLarge: TextStyle(
+            color: const Color(0xFF000000),
+            fontSize: size.height*.045,
+            fontWeight: FontWeight.w600,
+          ),
           bodyMedium: TextStyle(
             color: const Color(0xFF000000),
             fontSize: size.height*.03,
@@ -24,13 +29,13 @@ class FoodApp extends StatelessWidget {
           ),
           bodySmall: TextStyle(
             color: const Color(0xFFFA7C30),
-            fontSize: size.height*.025,
+            fontSize: size.height*.022,
             fontWeight: FontWeight.w300,
           ),
         )
       ),
       getPages:RoutesPage().routes ,
-      initialRoute: RoutesName.splashScreen,
+      initialRoute: RoutesName.loginScreen,
     );
   }
 }

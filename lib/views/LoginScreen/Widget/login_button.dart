@@ -50,8 +50,7 @@ class LoginButton extends StatelessWidget {
                     style: small?.copyWith(
                       color: Colors.black,
                       fontSize:
-                      MediaQuery.sizeOf(context).height * .02,
-                    ))
+                      MediaQuery.sizeOf(context).height * .02,))
               ],
             )),
       ],

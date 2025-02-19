@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_app_ui_getx/Routes/routes_name.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../utils/color.dart';
 import '../Widget/custom_button.dart';
@@ -65,7 +68,11 @@ class CreateScreen extends StatelessWidget {
               SizedBox(
                 height: size.height * .03,
               ),
-              CustomButton(size: size, medium: medium, text: 'Create Account',),
+              CustomButton(size: size, medium: medium, text: 'Create Account',
+              onTap: (){
+                Get.toNamed(RoutesName.homeScreen);
+              },
+              ),
               SizedBox(
                 height: size.height * .015,
               ),
